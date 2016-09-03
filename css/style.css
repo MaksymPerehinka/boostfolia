@@ -7,8 +7,32 @@
 @font-face {
   font-family: "Roboto Bold";
   src: url(fonts/Roboto-Bold.ttf); }
+@font-face {
+  font-family: "Roboto Light";
+  src: url(fonts/Roboto-Light.ttf); }
 body {
   background: #fff; }
+
+section.text-section {
+  padding: 94px 0 118px; }
+  section.text-section .section-header {
+    margin-bottom: 27px; }
+    section.text-section .section-header h2 {
+      font-family: BigNoodleTitling;
+      font-size: 48pt;
+      color: #3d3d3d;
+      text-align: center;
+      margin: 0; }
+    section.text-section .section-header img {
+      display: block;
+      margin: 0 auto; }
+  section.text-section .section-text {
+    font-family: Roboto;
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+    color: #696969;
+    margin: 0 230px 58px; }
 
 header.container-fluid {
   background: #f8f6f6;
@@ -17,45 +41,25 @@ header.container-fluid {
   header.container-fluid .dropdown {
     margin-top: 14px; }
 
-section.about-us {
-  padding: 94px 0 118px; }
-  section.about-us .about-header {
-    margin-bottom: 27px; }
-    section.about-us .about-header h2 {
-      font-family: BigNoodleTitling;
-      font-size: 48pt;
-      color: #3d3d3d;
-      text-align: center;
-      margin: 0; }
-    section.about-us .about-header img {
-      display: block;
-      margin: 0 auto; }
-  section.about-us .about-text {
-    font-family: Roboto;
+section.about-us .advantage {
+  background: #ebebeb;
+  padding: 30px 30px 25px; }
+  section.about-us .advantage .header, section.about-us .advantage .description {
     font-size: 14pt;
-    font-weight: bold;
-    text-align: center;
-    color: #696969;
-    margin: 0 230px 58px; }
-  section.about-us .advantage {
-    background: #ebebeb;
-    padding: 30px 30px 25px; }
-    section.about-us .advantage .header, section.about-us .advantage .description {
-      font-size: 14pt;
-      color: #707070;
-      text-align: center; }
-    section.about-us .advantage .header {
-      margin: 24px 0 16px 0;
-      font-family: "Roboto Bold";
-      text-transform: uppercase;
-      font-size: 18pt; }
-    section.about-us .advantage .description {
-      font-family: Roboto;
-      margin: 0;
-      font-weight: bold; }
-    section.about-us .advantage .icon {
-      height: 57px;
-      text-align: center; }
+    color: #707070;
+    text-align: center; }
+  section.about-us .advantage .header {
+    margin: 24px 0 16px 0;
+    font-family: "Roboto Bold";
+    text-transform: uppercase;
+    font-size: 18pt; }
+  section.about-us .advantage .description {
+    font-family: Roboto;
+    margin: 0;
+    font-weight: bold; }
+  section.about-us .advantage .icon {
+    height: 57px;
+    text-align: center; }
 
 section.video {
   background: #171f23; }
@@ -113,5 +117,22 @@ section.video {
       position: relative;
       z-index: 1;
       cursor: pointer; }
+
+section.our-works .button-list {
+  text-align: center; }
+  section.our-works .button-list li {
+    display: inline-block;
+    list-style: none;
+    padding: px 10px; }
+    section.our-works .button-list li a {
+      font-family: "Roboto Light";
+      font-size: 14pt;
+      color: #3d3d3d;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 7px 0; }
+    section.our-works .button-list li a.active {
+      border-bottom: 1px solid #e64e40;
+      font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
