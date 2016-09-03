@@ -123,15 +123,17 @@ section.video {
     .play-btn {
       text-align: center;
 
-      a {
+      button {
         background: #e84c3d;
         padding: 12px 33px 10px;
+        border: none;
         border-bottom: 2px solid #b11000;
         color: #fff;
         font-family: "Roboto Bold";
         font-size: 13pt;
         text-decoration: none;
         transition: 0.25s ease all;
+        outline: none;
 
         &:hover {
           background: #b11000;
@@ -183,8 +185,12 @@ section.video {
 }
 
 section.our-works {
+  padding: 94px 0 26px;
+
   .button-list {
     text-align: center;
+    margin: 0;
+    padding: 0;
 
     li {
       display: inline-block;
@@ -197,12 +203,67 @@ section.our-works {
         color: #3d3d3d;
         text-decoration: none;
         text-transform: uppercase;
+        transition: 0.25s ease all;
         padding: 7px 0;
       }
 
       a.active {
         border-bottom: 1px solid #e64e40;
         font-weight: bold;
+      }
+    }
+  }
+}
+
+section.portfolio {
+  .selection {
+    display: none;
+
+    .portfolio-item {
+      position: relative;
+      border-top: 1px solid #e96559;
+      border-left: 1px solid #e96559;
+      cursor: pointer;
+      display: block;
+
+      &:hover .overlay {
+        display: block;
+        text-decoration: none;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+      }
+
+      .overlay {
+        padding: 50px;
+        background: #e84c3d;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        display: none;
+        transition: 0.35s ease all;
+
+        h3.header {
+          font-family: "Roboto Bold";
+          font-size: 18pt;
+          text-transform: uppercase;
+        }
+        p.description {
+          font-family: Roboto;
+          font-size: 12pt;
+        }
+        h3.header,
+        p.description {
+          color: #fff;
+          text-align: center;
+        }
       }
     }
   }

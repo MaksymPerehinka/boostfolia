@@ -94,7 +94,7 @@
                     <h2 class="header">WATCH BEHIND THE SCENE</h2>
                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consectetur consequuntur dolorum, ducimus est facilis labore, libero mollitia placeat possimus, saepe suscipit tempora ullam? Animi asperiores iure laboriosam minus repellat.</p>
                     <div class="play-btn">
-                        <a href="" title="Play now">PLAY NOW</a>
+                        <button>PLAY NOW</button>
                     </div>
                 </div>
             </div>
@@ -126,14 +126,203 @@
         </div>
         <div class="row">
             <ul class="button-list">
-                <li><a class="active" href="#">All projects</a></li>
-                <li><a href="#">Photography</a></li>
-                <li><a href="#">Web design</a></li>
-                <li><a href="#">Branding</a></li>
-                <li><a href="#">Mobile app</a></li>
+                <li><a href="#" class="all-projects" onclick='return toggle_portfolio("all-projects")'>All projects</a></li>
+                <li><a href="#" class="photography" onclick='return toggle_portfolio("photography")'>Photography</a></li>
+                <li><a href="#" class="web-design" onclick='return toggle_portfolio("web-design")'>Web design</a></li>
+                <li><a href="#" class="branding" onclick='return toggle_portfolio("branding")'>Branding</a></li>
+                <li><a href="#" class="mobile-app" onclick='return toggle_portfolio("mobile-app")'>Mobile app</a></li>
             </ul>
         </div>
     </section>
 
+    <!-- Portfolio section -->
+    <section class="container-fluid portfolio">
+        <div class="selection" id="all-projects">
+            <div class="row">
+                <div class="col-xs-6 col-md-4">
+                    <div class="row portfolio-item">
+                        <img src="images/portfolio/item-1.png" alt="Project example 1"/>
+                        <a href="#" title="Project example 1" class="overlay">
+                            <h3 class="header">Project example 1</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis distinctio dolor earum inventore nulla quisquam similique?</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="row portfolio-item">
+                        <img src="images/portfolio/item-2.png" alt="Project example 2"/>
+                        <a href="#" title="Project example 2" class="overlay">
+                            <h3 class="header">Project example 2</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis distinctio dolor earum inventore nulla quisquam similique?</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="row portfolio-item">
+                        <img src="images/portfolio/item-3.png" alt="Project example 3"/>
+                        <a href="#" title="Project example 3" class="overlay">
+                            <h3 class="header">Project example 3</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis distinctio dolor earum inventore nulla quisquam similique?</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="row portfolio-item">
+                        <img src="images/portfolio/item-4.png" alt="Project example 4"/>
+                        <a href="#" title="Project example 4" class="overlay">
+                            <h3 class="header">Project example 4</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis distinctio dolor earum inventore nulla quisquam similique?</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="row portfolio-item">
+                        <img src="images/portfolio/item-5.png" alt="Project example 5"/>
+                        <a href="#" title="Project example " class="overlay">
+                            <h3 class="header">Project example 5</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis distinctio dolor earum inventore nulla quisquam similique?</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="row portfolio-item">
+                        <img src="images/portfolio/item-6.png" alt="Project example 6"/>
+                        <a href="#" title="Project example 6" class="overlay">
+                            <h3 class="header">Project example 6</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis distinctio dolor earum inventore nulla quisquam similique?</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="selection" id="photography">
+            <div class="row">
+                <div class="col-xs-6 col-md-4">
+                    <div class="row portfolio-item">
+                        <img src="images/portfolio/item-1.png" alt="Project example 1"/>
+                        <a href="#" title="Project example 1" class="overlay">
+                            <h3 class="header">Project example 1</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis distinctio dolor earum inventore nulla quisquam similique?</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="row portfolio-item">
+                        <img src="images/portfolio/item-2.png" alt="Project example 2"/>
+                        <a href="#" title="Project example 2" class="overlay">
+                            <h3 class="header">Project example 2</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis distinctio dolor earum inventore nulla quisquam similique?</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="row portfolio-item">
+                        <img src="images/portfolio/item-4.png" alt="Project example 4"/>
+                        <a href="#" title="Project example 4" class="overlay">
+                            <h3 class="header">Project example 4</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis distinctio dolor earum inventore nulla quisquam similique?</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="selection" id="web-design">
+            <div class="row">
+                <div class="col-xs-6 col-md-4">
+                    <div class="row portfolio-item">
+                        <img src="images/portfolio/item-6.png" alt="Project example 6"/>
+                        <a href="#" title="Project example 6" class="overlay">
+                            <h3 class="header">Project example 6</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis distinctio dolor earum inventore nulla quisquam similique?</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="row portfolio-item">
+                        <img src="images/portfolio/item-2.png" alt="Project example 2"/>
+                        <a href="#" title="Project example 2" class="overlay">
+                            <h3 class="header">Project example 2</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis distinctio dolor earum inventore nulla quisquam similique?</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="row portfolio-item">
+                        <img src="images/portfolio/item-4.png" alt="Project example 4"/>
+                        <a href="#" title="Project example 4" class="overlay">
+                            <h3 class="header">Project example 4</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis distinctio dolor earum inventore nulla quisquam similique?</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="selection" id="branding">
+            <div class="row">
+                <div class="col-xs-6 col-md-4">
+                    <div class="row portfolio-item">
+                        <img src="images/portfolio/item-6.png" alt="Project example 6"/>
+                        <a href="#" title="Project example 6" class="overlay">
+                            <h3 class="header">Project example 6</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis distinctio dolor earum inventore nulla quisquam similique?</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="row portfolio-item">
+                        <img src="images/portfolio/item-5.png" alt="Project example 5"/>
+                        <a href="#" title="Project example 5" class="overlay">
+                            <h3 class="header">Project example 2</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis distinctio dolor earum inventore nulla quisquam similique?</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="row portfolio-item">
+                        <img src="images/portfolio/item-1.png" alt="Project example 1"/>
+                        <a href="#" title="Project example 1" class="overlay">
+                            <h3 class="header">Project example 4</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis distinctio dolor earum inventore nulla quisquam similique?</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="selection" id="mobile-app">
+            <div class="row">
+                <div class="col-xs-6 col-md-4">
+                    <div class="row portfolio-item">
+                        <img src="images/portfolio/item-2.png" alt="Project example 2"/>
+                        <a href="#" title="Project example 2" class="overlay">
+                            <h3 class="header">Project example 6</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis distinctio dolor earum inventore nulla quisquam similique?</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="row portfolio-item">
+                        <img src="images/portfolio/item-4.png" alt="Project example 4"/>
+                        <a href="#" title="Project example 4" class="overlay">
+                            <h3 class="header">Project example 2</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis distinctio dolor earum inventore nulla quisquam similique?</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="row portfolio-item">
+                        <img src="images/portfolio/item-1.png" alt="Project example 1"/>
+                        <a href="#" title="Project example 1" class="overlay">
+                            <h3 class="header">Project example 4</h3>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis distinctio dolor earum inventore nulla quisquam similique?</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
