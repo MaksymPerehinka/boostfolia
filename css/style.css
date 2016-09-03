@@ -1,3 +1,117 @@
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto-Thin.ttf); }
+@font-face {
+  font-family: BigNoodleTitling;
+  src: url(fonts/big_noodle_titling.ttf); }
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(fonts/Roboto-Bold.ttf); }
+body {
+  background: #fff; }
 
+header.container-fluid {
+  background: #f8f6f6;
+  border-bottom: 4px solid #ebebeb;
+  padding: 50px 0 49px; }
+  header.container-fluid .dropdown {
+    margin-top: 14px; }
+
+section.about-us {
+  padding: 94px 0 118px; }
+  section.about-us .about-header {
+    margin-bottom: 27px; }
+    section.about-us .about-header h2 {
+      font-family: BigNoodleTitling;
+      font-size: 48pt;
+      color: #3d3d3d;
+      text-align: center;
+      margin: 0; }
+    section.about-us .about-header img {
+      display: block;
+      margin: 0 auto; }
+  section.about-us .about-text {
+    font-family: Roboto;
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+    color: #696969;
+    margin: 0 230px 58px; }
+  section.about-us .advantage {
+    background: #ebebeb;
+    padding: 30px 30px 25px; }
+    section.about-us .advantage .header, section.about-us .advantage .description {
+      font-size: 14pt;
+      color: #707070;
+      text-align: center; }
+    section.about-us .advantage .header {
+      margin: 24px 0 16px 0;
+      font-family: "Roboto Bold";
+      text-transform: uppercase;
+      font-size: 18pt; }
+    section.about-us .advantage .description {
+      font-family: Roboto;
+      margin: 0;
+      font-weight: bold; }
+    section.about-us .advantage .icon {
+      height: 57px;
+      text-align: center; }
+
+section.video {
+  background: #171f23; }
+  section.video .text-container {
+    padding: 60px 95px 0px; }
+    section.video .text-container h2.header {
+      color: #fff;
+      font-family: "Roboto Bold";
+      text-align: center;
+      font-size: 24pt;
+      font-weight: bold; }
+    section.video .text-container p.description {
+      color: #696969;
+      text-align: center;
+      font-family: Roboto;
+      font-weight: bold;
+      font-size: 13pt;
+      margin: 27px 0 46px; }
+    section.video .text-container .play-btn {
+      text-align: center; }
+      section.video .text-container .play-btn a {
+        background: #e84c3d;
+        padding: 12px 33px 10px;
+        border-bottom: 2px solid #b11000;
+        color: #fff;
+        font-family: "Roboto Bold";
+        font-size: 13pt;
+        text-decoration: none;
+        transition: 0.25s ease all; }
+        section.video .text-container .play-btn a:hover {
+          background: #b11000; }
+  section.video .video-container .row {
+    position: relative; }
+    section.video .video-container .row .play-btn {
+      position: absolute;
+      top: calc(50% - 53px);
+      left: calc(50% - 46px);
+      z-index: 3; }
+      section.video .video-container .row .play-btn:hover {
+        cursor: pointer; }
+    section.video .video-container .row .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background: rgba(0, 0, 0, 0.5);
+      transition: 0.25s ease all; }
+      section.video .video-container .row .overlay:hover {
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.2); }
+    section.video .video-container .row video {
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

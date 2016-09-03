@@ -16,8 +16,101 @@
     <!-- Scripts -->
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 <body>
+    <!-- Header -->
+    <header class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="images/logo.png" alt="Boostfolia logo"/>
+                </div>
+                <div class="col-sm-offset-8 col-sm-1 dropdown">
+                    <a href="#" title="Dropdown menu">
+                        <img src="images/menu.png" alt="Menu button"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <!-- Slider NOT COMPLETED -->
+    <section class="container-fluid slider">
+        <span>Arrow left</span>
+        <span>Arrow right</span>
+        <div>We think creative be creative</div>
+        <div>Like to do creative works</div>
+        <span>Image slide down</span>
+    </section>
+
+    <!-- About us -->
+    <section class="container about-us">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="about-header">
+                    <h2>About us</h2>
+                    <img src="images/about-line.png" alt="About underline"/>
+                </div>
+                <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid assumenda beatae distinctio eveniet ex excepturi illo, ipsa ipsum maiores non nostrum, quia quis rerum sequi soluta sunt ut vel.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="advantage">
+                    <div class="icon">
+                        <img src="images/creative-design.png" alt="Creative design"/>
+                    </div>
+                    <h3 class="header">Creative design</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                    <div class="advantage">
+                    <div class="icon">
+                        <img src="images/uniqu-portfolio.png" alt="Creative design"/>
+                    </div>
+                    <h3 class="header">Unique portfolio</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="advantage">
+                    <div class="icon">
+                        <img src="images/infinite-updates.png" alt="Creative design"/>
+                    </div>
+                    <h3 class="header">Infinite updates</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video -->
+    <section class="container-fluid video">
+        <div class="row">
+            <div class="col-sm-6 text-container">
+                <div class="row">
+                    <h2 class="header">WATCH BEHIND THE SCENE</h2>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consectetur consequuntur dolorum, ducimus est facilis labore, libero mollitia placeat possimus, saepe suscipit tempora ullam? Animi asperiores iure laboriosam minus repellat.</p>
+                    <div class="play-btn">
+                        <a href="" title="Play now">PLAY NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 video-container">
+                <div class="row">
+                    <div class="overlay">
+                        <img class="play-btn" src="images/play.png" alt="Play"/>
+                    </div>
+                    <video id="video">
+                        <source src="video/video.mp4" type="video/mp4">
+                        <source src="video/video.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
