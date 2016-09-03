@@ -130,15 +130,18 @@ section.our-works {
       display: inline-block;
       list-style: none;
       padding: 7px 10px; }
-      section.our-works .button-list li a {
+      section.our-works .button-list li button {
         font-family: "Roboto Light";
+        background: none;
+        outline: none;
+        border: none;
         font-size: 14pt;
         color: #3d3d3d;
         text-decoration: none;
         text-transform: uppercase;
         transition: 0.25s ease all;
         padding: 7px 0; }
-      section.our-works .button-list li a.active {
+      section.our-works .button-list li button.active {
         border-bottom: 1px solid #e64e40;
         font-weight: bold; }
 

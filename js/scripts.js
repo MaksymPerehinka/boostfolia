@@ -3,11 +3,27 @@
  */
 
 function toggle_portfolio(id) {
-    $('.selection').fadeOut('slow');
-    $("#" + id).fadeIn("slow");
-    $(".button-list a").removeClass("active");
+    var toHide = null;
+
+    $('.selection').each(function(){
+        
+        if($(this).css("display") == "block") {
+            toHide = $(this);
+        }
+    });
+
+    if(toHide){
+        toHide.fadeOut(1500, function () {
+            $('#' + id).fadeIn(1500);
+        });
+    }
+    else {
+        $('#' + id).fadeIn(1500);
+    }
+
+    $(".button-list button").removeClass("active");
     $("." + id).toggleClass("active");
-    return false;
+    return 0;
 }
 
 $(document).ready(function(){

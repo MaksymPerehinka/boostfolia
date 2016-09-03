@@ -197,8 +197,11 @@ section.our-works {
       list-style: none;
       padding: 7px 10px;
 
-      a {
+      button {
         font-family: "Roboto Light";
+        background: none;
+        outline: none;
+        border: none;
         font-size: 14pt;
         color: #3d3d3d;
         text-decoration: none;
@@ -207,7 +210,7 @@ section.our-works {
         padding: 7px 0;
       }
 
-      a.active {
+      button.active {
         border-bottom: 1px solid #e64e40;
         font-weight: bold;
       }
