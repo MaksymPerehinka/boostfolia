@@ -42,11 +42,13 @@ section.text-section {
       font-size: 48pt;
       color: #3d3d3d;
       text-align: center;
-      margin: 0;
+      margin: 0 0 3px;
     }
 
-    img {
-      display: block;
+    .underline {
+      width: 152px;
+      height: 2px;
+      background: #f4511e;
       margin: 0 auto;
     }
   }
@@ -449,6 +451,106 @@ section.some-features {
       font-family: "Roboto Light";
       font-size: 34.5pt;
       color: #f6f6f6;
+    }
+  }
+}
+
+section.blog-posts {
+  .posts {
+    .post {
+      display: block;
+      &:hover {
+        text-decoration: none;
+
+        .post-img {
+          .overlay {
+            opacity: 0.5;
+          }
+
+          .action-buttons {
+            opacity: 1;
+          }
+        }
+      }
+
+      .post-img {
+        text-align: center;
+        overflow: hidden;
+        height: 245px;
+        position: relative;
+
+        .overlay {
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+          transition: 0.25s ease all;
+          background: #000;
+          opacity: 0;
+        }
+
+        .img {
+          width: 100%;
+          height: auto;
+          position: relative;
+          z-index: 1;
+        }
+
+        .action-buttons {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          top: calc(50% - 22px);
+          left: 0;
+          opacity: 0;
+          transition: 0.25s ease all;
+          z-index: 3;
+
+          img {
+            border-radius: 50%;
+          }
+
+          .share {
+            background: #e87e5d;
+            padding: 10px;
+            margin-right: 20px;
+          }
+
+          .view {
+            background: #f6e5e0;
+            padding: 14px 9px;
+          }
+        }
+      }
+
+      .post-description {
+        background: #ebebeb;
+        padding: 49px 25px 24px;
+
+        h3.header {
+          margin: 0 0 30px;
+          font-family: "Roboto Light";
+          font-size: 13.5pt;
+          color: #505050;
+          font-weight: bold;
+        }
+
+        p.text {
+          margin: 0 0 25px;
+          color: #797979;
+          font-family: "Roboto Light";
+          font-size: 10.5pt;
+        }
+
+        .details span {
+          font-size: 9.5pt;
+          font-family: "Roboto Condenced";
+          color: #8a8989;
+          margin: 0 3px 0 2px;
+        }
+      }
     }
   }
 }
