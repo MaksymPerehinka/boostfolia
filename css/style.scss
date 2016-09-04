@@ -22,6 +22,11 @@ $darkgrey: #707070;
   src: url(fonts/Roboto-Light.ttf)
 }
 
+@font-face {
+  font-family: "Roboto Condenced";
+  src: url(fonts/RobotoCondensed-Regular.ttf);
+}
+
 body {
   background: #fff;
 }
@@ -53,6 +58,30 @@ section.text-section {
     text-align: center;
     color: #696969;
     margin: 0 230px 58px;
+  }
+}
+
+section.text-section-dark {
+  background: #171f23;
+
+  .headline {
+    padding: 0 0 44px;
+
+    h2.header {
+      font-family: "Roboto Condenced";
+      font-size: 27pt;
+      color: #f6f6f6;
+      text-align: center;
+      margin: 0 0 13px 0;
+      text-transform: uppercase;
+    }
+
+    div.underline {
+      background: #404040;
+      height: 1px;
+      width: 86px;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -221,6 +250,10 @@ section.our-works {
 section.portfolio {
   .selection {
     display: none;
+
+    > .row {
+      border-bottom: 1px solid #e96559;
+    }
 
     .portfolio-item {
       position: relative;
@@ -397,6 +430,25 @@ section.team {
           }
         }
       }
+    }
+  }
+}
+
+section.some-features {
+  padding: 53px 0 68px;
+
+  .feature {
+    text-align: center;
+    h3.name {
+      font-family: "Roboto Light";
+      font-size: 13.5pt;
+      color: #f6f6f6;
+      margin: 23px 0 16px;
+    }
+    span.count {
+      font-family: "Roboto Light";
+      font-size: 34.5pt;
+      color: #f6f6f6;
     }
   }
 }

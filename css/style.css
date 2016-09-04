@@ -10,6 +10,9 @@
 @font-face {
   font-family: "Roboto Light";
   src: url(fonts/Roboto-Light.ttf); }
+@font-face {
+  font-family: "Roboto Condenced";
+  src: url(fonts/RobotoCondensed-Regular.ttf); }
 body {
   background: #fff; }
 
@@ -33,6 +36,23 @@ section.text-section {
     text-align: center;
     color: #696969;
     margin: 0 230px 58px; }
+
+section.text-section-dark {
+  background: #171f23; }
+  section.text-section-dark .headline {
+    padding: 0 0 44px; }
+    section.text-section-dark .headline h2.header {
+      font-family: "Roboto Condenced";
+      font-size: 27pt;
+      color: #f6f6f6;
+      text-align: center;
+      margin: 0 0 13px 0;
+      text-transform: uppercase; }
+    section.text-section-dark .headline div.underline {
+      background: #404040;
+      height: 1px;
+      width: 86px;
+      margin: 0 auto; }
 
 header.container-fluid {
   background: #f8f6f6;
@@ -147,6 +167,8 @@ section.our-works {
 
 section.portfolio .selection {
   display: none; }
+  section.portfolio .selection > .row {
+    border-bottom: 1px solid #e96559; }
   section.portfolio .selection .portfolio-item {
     position: relative;
     border-top: 1px solid #e96559;
@@ -264,5 +286,19 @@ section.team .team-member .details {
       font-family: "Roboto Light";
       font-size: 13pt;
       color: #3d3d3d; }
+
+section.some-features {
+  padding: 53px 0 68px; }
+  section.some-features .feature {
+    text-align: center; }
+    section.some-features .feature h3.name {
+      font-family: "Roboto Light";
+      font-size: 13.5pt;
+      color: #f6f6f6;
+      margin: 23px 0 16px; }
+    section.some-features .feature span.count {
+      font-family: "Roboto Light";
+      font-size: 34.5pt;
+      color: #f6f6f6; }
 
 /*# sourceMappingURL=style.css.map */
