@@ -2,6 +2,37 @@
  * Created by Maxim on 03.09.2016.
  */
 
+var teamDataJson = '{ "members" : [' +
+    ' { "id" : "frank-underwood",' +
+        ' "fullName" : "Frank Underwood", ' +
+        ' "role" : "Congressman", ' +
+        ' "description" : "Francis J. \\"Frank\\" Underwood is a fictional character and the protagonist of the American version of House of Cards. He is portrayed by Kevin Spacey." ,' +
+        ' "image" : "member-1.png",' +
+        ' "photoshop" : "14",' +
+        ' "illustrator" : "25",' +
+        ' "sketch" : "86",' +
+        ' "afterEffects" : "56"  } , ' +
+        '{ "id" : "walter-white",' +
+        ' "fullName" : "Walter White",' +
+        ' "role" : "Drug dealer",' +
+        ' "description" : "Walter Hartwell White Sr. is a fictional character and the main protagonist of Breaking Bad, portrayed by Bryan Cranston.",' +
+        ' "image" : "member-2.png",' +
+        ' "photoshop" : "65",' +
+        ' "illustrator" : "86",' +
+        ' "sketch" : "21",' +
+        ' "afterEffects" : "34"  } , ' +
+        '{ "id" : "gregory-house",' +
+        ' "fullName" : "Gregory House",' +
+        ' "role" : "Doctor",' +
+        ' "description" : "Gregory House, MD — typically referred to simply as House — is the title character of the American medical drama series House.",' +
+        ' "image" : "member-3.png",' +
+        ' "photoshop" : "56",' +
+        ' "illustrator" : "75",' +
+        ' "sketch" : "99",' +
+        ' "afterEffects" : "46"  } ' +
+    '],' +
+    '"skills" : ["photoshop", "illustrator", "sketch", "afterEffects"] }';
+
 function toggle_portfolio(id) {
     var toHide = null;
 
@@ -33,66 +64,74 @@ function toggle_portfolio(id) {
     $("." + id).toggleClass("active");
 }
 
-function set_team_skills() {
-    var jsonText = '{ "members" : [' +
-        '{ "id" : "frank-underwood", "photoshop" : "46" , "illustrator" : "86", "sketch" : "25", "afterEffects" : "95"},' +
-        '{ "id" : "walter-white", "photoshop" : "76" , "illustrator" : "26", "sketch" : "65", "afterEffects" : "25"},' +
-        '{ "id" : "gregory-house", "photoshop" : "16" , "illustrator" : "100", "sketch" : "78", "afterEffects" : "19"}' +
-        '] }';
-
-    var skills = JSON.parse(jsonText);
-    var lineWidth = parseFloat($(".member-details .skill .line").css('width'));
-    var skillLevel;
-
-    for(var i = 0; i < skills.members.length; i++){
-        skillLevel = (lineWidth / 100 * skills.members[i].photoshop) + "px";
-        $("#photoshop-skill-percentage-" + skills.members[i].id).text(skills.members[i].photoshop + "%");
-        $("#photoshop-skill-line-" + skills.members[i].id).css("width", skillLevel);
-
-        skillLevel = (lineWidth / 100 * skills.members[i].illustrator) + "px";
-        $("#illustrator-skill-percentage-" + skills.members[i].id).text(skills.members[i].illustrator + "%");
-        $("#illustrator-skill-line-" + skills.members[i].id).css("width", skillLevel);
-
-        skillLevel = (lineWidth / 100 * skills.members[i].sketch) + "px";
-        $("#sketch-skill-percentage-" + skills.members[i].id).text(skills.members[i].sketch + "%");
-        $("#sketch-skill-line-" + skills.members[i].id).css("width", skillLevel);
-
-        skillLevel = (lineWidth / 100 * skills.members[i].afterEffects) + "px";
-        $("#afterEffects-skill-percentage-" + skills.members[i].id).text(skills.members[i].afterEffects + "%");
-        $("#afterEffects-skill-line-" + skills.members[i].id).css("width", skillLevel);
-    }
+function set_team_height(){
+    var height = $('.team .team-member .details').css('height');
+    $('.team .team-member .card').css('height', height);
 }
 
 function display_team_member(id){
-    $(".team .card .member").each(function () {
-        $(this).css('display', 'none') ;
-    });
-    $(".team .detail .member-details").each(function () {
-        $(this).css('display', 'none') ;
-    });
+    var data = JSON.parse(teamDataJson);
 
-    $('#card-' + id).css('display', "block");
-    $('#details-' + id).css('display', "block");
+    for(var i = 0; i < data.members.length; i++){
+        if(data.members[i].id == id) var current = data.members[i];
+    }
 
-    $('.team .controls .control').each(function () {
-        if($(this).hasClass('active')) $(this).removeClass('active');
+    $('#member-name').fadeOut(750, function () {
+        $(this).text(current.fullName);
+        $(this).fadeIn(750);
     });
 
-    $('.control-' + id).addClass("active");
-}
+    $('#member-role').fadeOut(750, function () {
+        $(this).text(current.role);
+        $(this).fadeIn(750);
+    });
 
-function set_team_height() {
-    var height = $(".team .detail").css('height');
+    $('img#member-img').fadeOut(750, function () {
+        $(this).attr('src', 'images/team/' + current.image);
+        $(this).fadeIn(750);
+    });
 
-    $(".team .card").css('height', height);
+    $('#member-description').fadeOut(750, function () {
+        $(this).text(current.description);
+        $(this).fadeIn(750);
+    });
+    var skillLineWidth = parseFloat($('.line').css('width')) / 100;
+    var width = skillLineWidth * current.photoshop + "px";
+
+    $('.photoshop .line .level').animate({width: width}, 1500);
+    width = skillLineWidth * current.illustrator + "px";
+    $('.illustrator .line .level').animate({width: width}, 1500);
+    width = skillLineWidth * current.sketch + "px";
+    $('.sketch .line .level').animate({width: width}, 1500);
+    width = skillLineWidth * current.afterEffects + "px";
+    $('.afterEffects .line .level').animate({width: width}, 1500);
+
+    $('.photoshop .percentage').fadeOut(750, function () {
+        $('.photoshop .percentage').text(current.photoshop + "%");
+        $('.photoshop .percentage').fadeIn(750);
+    });
+    $('.illustrator .percentage').fadeOut(750, function () {
+        $('.illustrator .percentage').text(current.illustrator + "%");
+        $('.illustrator .percentage').fadeIn(750);
+    });
+    $('.sketch .percentage').fadeOut(750, function () {
+        $('.sketch .percentage').text(current.sketch + "%");
+        $('.sketch .percentage').fadeIn(750);
+    });
+    $('.afterEffects .percentage').fadeOut(750, function () {
+        $('.afterEffects .percentage').text(current.afterEffects + "%");
+        $('.afterEffects .percentage').fadeIn(750);
+    });
+
+    $('.control').removeClass('active');
+    $('.control-' + id).addClass('active');
 }
 
 $(document).ready(function(){
     toggle_portfolio("all-projects");
-
-    display_team_member("frank-underwood");
-    set_team_skills();
     set_team_height();
+    display_team_member('frank-underwood');
+
 
     $('.play-btn button').on('click', function(){
         document.getElementById('video').play();

@@ -184,40 +184,38 @@ section.portfolio .selection {
         color: #fff;
         text-align: center; }
 
-section.team .members .card, section.team .members .member-details {
+section.team .team-member .card, section.team .team-member .details {
   background: #ebebeb; }
-section.team .members .member {
-  display: none; }
-  section.team .members .member .portrait {
-    text-align: center;
-    padding: 70px 0 30px; }
-    section.team .members .member .portrait img {
-      width: 136px;
-      height: auto;
-      border-radius: 50%; }
-  section.team .members .member h3 {
-    font-family: "Roboto Bold";
-    font-size: 20pt;
-    text-align: center;
-    text-transform: uppercase;
-    color: #3d3d3d;
-    margin: 0; }
-  section.team .members .member p {
-    font-family: "Roboto Light";
-    font-size: 14pt;
-    text-align: center;
-    text-transform: uppercase;
-    color: #3d3d3d;
-    margin: 0 0 23px; }
-  section.team .members .member .social-buttons {
-    text-align: center;
-    vertical-align: middle;
-    padding: 0 0 40px; }
-    section.team .members .member .social-buttons a {
-      padding: 0 5px; }
-section.team .members .controls {
+section.team .team-member .card .member-img {
+  text-align: center;
+  padding: 70px 0 30px; }
+  section.team .team-member .card .member-img img {
+    width: 136px;
+    height: auto;
+    border-radius: 50%; }
+section.team .team-member .card h3.member-name {
+  font-family: "Roboto Bold";
+  font-size: 20pt;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3d3d3d;
+  margin: 0; }
+section.team .team-member .card p.member-role {
+  font-family: "Roboto Light";
+  font-size: 14pt;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3d3d3d;
+  margin: 0 0 23px; }
+section.team .team-member .card .social-buttons {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 0 40px; }
+  section.team .team-member .card .social-buttons a {
+    padding: 0 5px; }
+section.team .team-member .card .controls {
   text-align: center; }
-  section.team .members .controls .control {
+  section.team .team-member .card .controls .control {
     background: #fff;
     width: 12px;
     height: 12px;
@@ -225,45 +223,44 @@ section.team .members .controls {
     margin-left: 7px;
     display: inline-block;
     transition: 0.35s ease all; }
-  section.team .members .controls .control:first-child {
+  section.team .team-member .card .controls .control:first-child {
     margin: 0; }
-  section.team .members .controls .control:hover {
+  section.team .team-member .card .controls .control:hover {
     cursor: pointer;
     background: #3d3d3d; }
-  section.team .members .controls .active {
+  section.team .team-member .card .controls .active {
     background: #8e8181; }
-section.team .members .member-details {
-  display: none;
+section.team .team-member .details {
   padding: 90px 55px 57px 45px; }
-  section.team .members .member-details h3 {
+  section.team .team-member .details h3.header {
     font-family: "Roboto Bold";
     font-size: 22pt;
     text-transform: uppercase;
     color: #3d3d3d;
     margin: 0 0 25px; }
-  section.team .members .member-details p.description {
+  section.team .team-member .details p.about {
     font-family: Roboto;
     font-size: 13pt;
     color: #858383;
     margin: 0 0 45px; }
-  section.team .members .member-details .skills .skill {
+  section.team .team-member .details .skill-level .skill {
     padding: 0 0 20px; }
-    section.team .members .member-details .skills .skill h4 {
+    section.team .team-member .details .skill-level .skill .skill-name {
       font-family: "Roboto Bold";
       text-transform: uppercase;
       font-size: 13pt;
       color: #3d3d3d;
       margin: 0; }
-    section.team .members .member-details .skills .skill .line {
+    section.team .team-member .details .skill-level .skill .line {
       width: 100%;
       height: 1px;
       background: #fff;
       margin: 10px 0; }
-      section.team .members .member-details .skills .skill .line .skill-level {
+      section.team .team-member .details .skill-level .skill .line .level {
         background: #e84c3d;
         height: 1px;
         width: 0; }
-    section.team .members .member-details .skills .skill .skill-percentage {
+    section.team .team-member .details .skill-level .skill .percentage {
       font-family: "Roboto Light";
       font-size: 13pt;
       color: #3d3d3d; }
