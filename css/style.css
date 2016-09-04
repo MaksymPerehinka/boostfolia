@@ -369,4 +369,62 @@ section.blog-posts .posts .post {
       color: #8a8989;
       margin: 0 3px 0 2px; }
 
+section.plan {
+  padding: 59px 0 94px; }
+  section.plan .plan-items {
+    overflow: hidden;
+    text-align: center;
+    width: 952px;
+    margin: 0 auto; }
+    section.plan .plan-items .item {
+      float: left;
+      width: 235px;
+      border: 1px solid #171f23;
+      margin: 0 1px 0 0;
+      display: block;
+      text-decoration: none; }
+      section.plan .plan-items .item:hover {
+        border: 1px solid #f6744b;
+        text-decoration: none; }
+      section.plan .plan-items .item:last-child {
+        margin: 0; }
+      section.plan .plan-items .item .header {
+        background: #0e1316;
+        padding: 37px 0 30px; }
+        section.plan .plan-items .item .header h3.name {
+          font-family: Roboto Bold;
+          font-size: 10.5pt;
+          color: #fff;
+          margin: 0;
+          text-transform: uppercase; }
+        section.plan .plan-items .item .header div.cost {
+          font-family: "Roboto Light";
+          font-size: 27pt;
+          color: #fff; }
+          section.plan .plan-items .item .header div.cost .currency {
+            font-size: 18pt; }
+      section.plan .plan-items .item .description {
+        background: #1f282c;
+        padding: 48px 0 51px; }
+        section.plan .plan-items .item .description .line {
+          padding: 0 0 20px 0;
+          font-family: "Roboto Thin";
+          font-size: 12pt;
+          color: #fff; }
+          section.plan .plan-items .item .description .line .bold {
+            font-family: "Roboto Bold"; }
+          section.plan .plan-items .item .description .line .orange {
+            color: #f6744b; }
+        section.plan .plan-items .item .description .purchase {
+          text-align: center;
+          padding: 57px 0 0; }
+          section.plan .plan-items .item .description .purchase .purchase-btn {
+            color: #fff;
+            background: #f6744b;
+            border-radius: 5px;
+            font-size: 11pt;
+            font-family: "Roboto Bold";
+            text-transform: uppercase;
+            padding: 8px 27px; }
+
 /*# sourceMappingURL=style.css.map */
