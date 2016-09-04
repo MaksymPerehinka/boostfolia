@@ -106,22 +106,25 @@ function display_team_member(id){
     width = skillLineWidth * current.afterEffects + "px";
     $('.afterEffects .line .level').animate({width: width}, 1500);
 
-    $('.photoshop .percentage').fadeOut(750, function () {
-        $('.photoshop .percentage').text(current.photoshop + "%");
-        $('.photoshop .percentage').fadeIn(750);
-    });
-    $('.illustrator .percentage').fadeOut(750, function () {
-        $('.illustrator .percentage').text(current.illustrator + "%");
-        $('.illustrator .percentage').fadeIn(750);
-    });
-    $('.sketch .percentage').fadeOut(750, function () {
-        $('.sketch .percentage').text(current.sketch + "%");
-        $('.sketch .percentage').fadeIn(750);
-    });
-    $('.afterEffects .percentage').fadeOut(750, function () {
-        $('.afterEffects .percentage').text(current.afterEffects + "%");
-        $('.afterEffects .percentage').fadeIn(750);
-    });
+    function set_percentage(id,value){
+        var currentPercentage = parseInt($('.' + id + ' .percentage').text());
+        var speed = 1500 / Math.abs(currentPercentage - value);
+        setInterval(function(){
+            if(currentPercentage < value) {
+                currentPercentage++;
+            }
+            else if(currentPercentage > value){
+                currentPercentage--;
+            }
+            else return 0;
+            $('.' + id + ' .percentage').text(currentPercentage + "%");
+        },speed);
+    }
+
+    set_percentage('photoshop', current.photoshop);
+    set_percentage('illustrator', current.illustrator);
+    set_percentage('sketch', current.sketch);
+    set_percentage('afterEffects', current.afterEffects);
 
     $('.control').removeClass('active');
     $('.control-' + id).addClass('active');
