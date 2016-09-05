@@ -32,14 +32,14 @@ body {
 }
 
 section.text-section {
-  padding: 94px 0 118px;
+  padding: 64px 0 94px;
 
   .section-header {
     margin-bottom: 27px;
 
     h2 {
       font-family: BigNoodleTitling;
-      font-size: 48pt;
+      font-size: 36pt;
       color: #3d3d3d;
       text-align: center;
       margin: 0 0 3px;
@@ -55,7 +55,7 @@ section.text-section {
 
   .section-text{
     font-family: Roboto;
-    font-size: 14pt;
+    font-size: 10.5pt;
     font-weight: bold;
     text-align: center;
     color: #696969;
@@ -640,5 +640,72 @@ section.plan {
       }
     }
 
+  }
+}
+
+section.callback {
+  .callback-form {
+    .left {
+      padding-left: 95px;
+    }
+
+    .right {
+      padding-right: 95px;
+    }
+
+    .both {
+      padding-left: 95px;
+      padding-right: 95px;
+    }
+
+    .f-gr {
+
+      label {
+        display: block;
+        font-family: "Roboto Bold";
+        font-size: 10.5pt;
+        color: #696969;
+        text-transform: uppercase;
+        padding: 40px 0 20px;
+
+        .star {
+          color: #f6744b;
+        }
+      }
+
+      input, textarea {
+        border: none;
+        outline: none;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #cacaca;
+        font-family: "Roboto Light";
+        font-size: 12pt;
+        color: #696969;
+        -webkit-box-shadow: 0 0 0 1000px white inset;
+        -webkit-text-fill-color: #696969 !important;
+      }
+    }
+
+    .submit-btn {
+      text-align: center;
+      padding: 45px 0 0;
+
+      input {
+        background: #f6744b;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-family: "Roboto Bold";
+        font-size: 10.5pt;
+        text-transform: uppercase;
+        transition: 0.25s ease all;
+        padding: 13px 37px;
+
+        &:hover {
+          background: #e84c3d;
+        }
+      }
+    }
   }
 }

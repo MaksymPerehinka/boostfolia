@@ -17,12 +17,12 @@ body {
   background: #fff; }
 
 section.text-section {
-  padding: 94px 0 118px; }
+  padding: 64px 0 94px; }
   section.text-section .section-header {
     margin-bottom: 27px; }
     section.text-section .section-header h2 {
       font-family: BigNoodleTitling;
-      font-size: 48pt;
+      font-size: 36pt;
       color: #3d3d3d;
       text-align: center;
       margin: 0 0 3px; }
@@ -33,7 +33,7 @@ section.text-section {
       margin: 0 auto; }
   section.text-section .section-text {
     font-family: Roboto;
-    font-size: 14pt;
+    font-size: 10.5pt;
     font-weight: bold;
     text-align: center;
     color: #696969;
@@ -426,5 +426,48 @@ section.plan {
             font-family: "Roboto Bold";
             text-transform: uppercase;
             padding: 8px 27px; }
+
+section.callback .callback-form .left {
+  padding-left: 95px; }
+section.callback .callback-form .right {
+  padding-right: 95px; }
+section.callback .callback-form .both {
+  padding-left: 95px;
+  padding-right: 95px; }
+section.callback .callback-form .f-gr label {
+  display: block;
+  font-family: "Roboto Bold";
+  font-size: 10.5pt;
+  color: #696969;
+  text-transform: uppercase;
+  padding: 40px 0 20px; }
+  section.callback .callback-form .f-gr label .star {
+    color: #f6744b; }
+section.callback .callback-form .f-gr input, section.callback .callback-form .f-gr textarea {
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #cacaca;
+  font-family: "Roboto Light";
+  font-size: 12pt;
+  color: #696969;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  -webkit-text-fill-color: #696969 !important; }
+section.callback .callback-form .submit-btn {
+  text-align: center;
+  padding: 45px 0 0; }
+  section.callback .callback-form .submit-btn input {
+    background: #f6744b;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: "Roboto Bold";
+    font-size: 10.5pt;
+    text-transform: uppercase;
+    transition: 0.25s ease all;
+    padding: 13px 37px; }
+    section.callback .callback-form .submit-btn input:hover {
+      background: #e84c3d; }
 
 /*# sourceMappingURL=style.css.map */
