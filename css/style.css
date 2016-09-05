@@ -497,4 +497,26 @@ section.map {
       margin: 30px 0;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
 
+footer {
+  padding: 40px 0 50px;
+  text-align: center;
+  background: #171f23; }
+  footer h2.logo {
+    font-family: BigNoodleTitling;
+    font-size: 18pt;
+    color: #fff;
+    margin: 7px 0 10px;
+    text-align: center; }
+  footer span.text {
+    font-family: "Roboto Condenced";
+    font-size: 10.5pt;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 10px; }
+  footer .social-buttons {
+    margin: 7px 0 0;
+    text-align: center; }
+    footer .social-buttons img {
+      margin: 0 4px; }
+
 /*# sourceMappingURL=style.css.map */
