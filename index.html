@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,31 +35,41 @@
                 </div>
             </div>
         </div>
+        <!-- Navigation -->
+        <nav id="right-navigation" class="navigation">
+            <h2 class="header">Main menu</h2>
+            <ul>
+                <li><a class="menu-item" href="#">Example 1</a></li>
+                <li class="divider">&nbsp;</li>
+                <li><a class="menu-item" href="#">Example 2</a></li>
+                <li class="divider">&nbsp;</li>
+                <li><a class="menu-item" href="#">Example 3</a></li>
+                <li class="divider">&nbsp;</li>
+                <li><a class="menu-item" href="#">Example 4</a></li>
+                <li class="divider">&nbsp;</li>
+                <li><a class="menu-item" href="#">Example 5</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Navigation -->
-    <nav id="right-navigation" class="navigation">
-        <h2 class="header">Main menu</h2>
-        <ul>
-            <li><a class="menu-item" href="#">Example 1</a></li>
-            <li class="divider">&nbsp;</li>
-            <li><a class="menu-item" href="#">Example 2</a></li>
-            <li class="divider">&nbsp;</li>
-            <li><a class="menu-item" href="#">Example 3</a></li>
-            <li class="divider">&nbsp;</li>
-            <li><a class="menu-item" href="#">Example 4</a></li>
-            <li class="divider">&nbsp;</li>
-            <li><a class="menu-item" href="#">Example 5</a></li>
-        </ul>
-    </nav>
-
-    <!-- Slider NOT COMPLETED -->
-    <section class="container-fluid slider">
-        <span>Arrow left</span>
-        <span>Arrow right</span>
-        <div>We think creative be creative</div>
-        <div>Like to do creative works</div>
-        <span>Image slide down</span>
+    <!-- Slider -->
+    <section class="container-fluid main-slider">
+        <div class="controls">
+            <img class="left control" id="main-slider-left" src="images/arrow-left-m.png" alt="Arrow left"/>
+            <img class="right control" id="main-slider-right" src="images/arrow-right-m.png" alt="Arrow right"/>
+        </div>
+        <div class="container">
+            <div class="top-slider">
+                <div id="ms-slide" class="slide">
+                    <div id="ms-top" class="top">This is training PSD to HTML converting</div>
+                    <div id="ms-bottom" class="bottom">Converted by by Maksym Perehinka</div>
+                </div>
+            </div>
+            <div class="scroll-icon">
+                <img src="images/mouse.png" alt="Scroll down"/>
+                <div class="scroll-text">Scroll down</div>
+            </div>
+        </div>
     </section>
 
     <!-- About us -->
@@ -694,7 +705,7 @@
 
     <!-- Map section -->
     <section class="container-fluid map">
-        <div class="row header">
+        <div id="map-section" class="row header">
             <h2>Locate on map</h2>
             <img id="map-trigger" src="images/arrow-down.png" title="More"/>
         </div>

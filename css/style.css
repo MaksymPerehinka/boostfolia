@@ -14,7 +14,10 @@
   font-family: "Roboto Condenced";
   src: url(fonts/RobotoCondensed-Regular.ttf); }
 body {
-  background: #fff; }
+  background: #fff;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden; }
 
 section.text-section {
   padding: 64px 0 94px; }
@@ -76,7 +79,8 @@ nav#right-navigation {
   position: absolute;
   top: 176px;
   right: -150px;
-  z-index: 5; }
+  z-index: 5;
+  overflow: hidden; }
   nav#right-navigation h2.header {
     margin: 0;
     background: #3d3d3d;
@@ -109,6 +113,42 @@ nav#right-navigation {
       width: calc(100% - 40px);
       margin: 0 auto;
       background: #797979; }
+
+section.main-slider {
+  background: #353535;
+  padding: 240px 0 32px;
+  position: relative; }
+  section.main-slider .controls {
+    position: absolute;
+    top: calc(50% - 23px);
+    left: 0;
+    width: 100%; }
+    section.main-slider .controls .control {
+      position: absolute;
+      top: 0;
+      cursor: pointer; }
+    section.main-slider .controls .left {
+      left: 65px; }
+    section.main-slider .controls .right {
+      right: 65px; }
+  section.main-slider .top-slider .slide .top {
+    font-size: 54pt;
+    font-family: BigNoodleTitling; }
+  section.main-slider .top-slider .slide .bottom {
+    font-size: 27pt; }
+  section.main-slider .top-slider .slide .top, section.main-slider .top-slider .slide .bottom {
+    color: #d6d5d5;
+    font-family: BigNoodleTitling;
+    text-align: center; }
+  section.main-slider .scroll-icon img {
+    display: block;
+    margin: 127px auto 17px; }
+  section.main-slider .scroll-icon .scroll-text {
+    font-family: "Roboto Bold";
+    text-transform: uppercase;
+    font-size: 9pt;
+    color: #fff;
+    text-align: center; }
 
 section.about-us .advantage {
   background: #ebebeb;
@@ -407,6 +447,8 @@ section.blog-posts .posts .post {
       opacity: 0.5; }
     section.blog-posts .posts .post:hover .post-img .action-buttons {
       opacity: 1; }
+    section.blog-posts .posts .post:hover .post-description {
+      background: #f6e5e0; }
   section.blog-posts .posts .post .post-img {
     text-align: center;
     overflow: hidden;
@@ -571,7 +613,8 @@ section.map {
   section.map .header {
     background: #0c1215;
     text-align: center;
-    padding: 25px 0 27px; }
+    padding: 25px 0 27px;
+    cursor: pointer; }
     section.map .header h2 {
       font-family: "Roboto Bold";
       font-size: 18pt;
@@ -582,8 +625,7 @@ section.map {
       vertical-align: middle; }
     section.map .header #map-trigger {
       vertical-align: middle;
-      margin: 0 7px;
-      cursor: pointer; }
+      margin: 0 7px; }
   section.map .map-container {
     text-align: center;
     display: none; }

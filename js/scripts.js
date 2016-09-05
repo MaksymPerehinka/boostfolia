@@ -33,6 +33,11 @@ var teamDataJson = '{ "members" : [' +
     '],' +
     '"skills" : ["photoshop", "illustrator", "sketch", "afterEffects"] }';
 
+var mainSliderJSON = ' { "slide" : [' +
+    ' { "id" : "0", "top" : "This is training PSD to HTML converting", "bottom" : "Converted by by Maksym Perehinka" },' +
+    ' { "id" : "1", "top" : "Contact me at maksym.perehinka@gmail.com", "bottom" : "Or skype: maksym.perehinka" },' +
+    ' { "id" : "2", "top" : "Layout name", "bottom" : "Boostfolia" }] } ';
+
 function toggle_portfolio(id) {
     var toHide = null;
 
@@ -130,16 +135,45 @@ function display_team_member(id){
     $('.control-' + id).addClass('active');
 }
 
+var mainSliderCounter;
+function toggle_main_slider(id) {
+    data = JSON.parse(mainSliderJSON);
+
+    if(id == 'main-slider-left'){
+        if(mainSliderCounter <= 0) mainSliderCounter = 2;
+        else mainSliderCounter--;
+    }
+    else {
+        if(mainSliderCounter >= 2) mainSliderCounter = 0;
+        else mainSliderCounter++;
+    }
+    $('#ms-slide').stop(true,false);
+
+    $('#ms-slide').animate({opacity: 0}, 760, function () {
+        $('#ms-top').text(data.slide[mainSliderCounter].top);
+        $('#ms-bottom').text(data.slide[mainSliderCounter].bottom);
+        $(this).animate({opacity: 1}, 750);
+    });
+}
+
 $(document).ready(function(){
     toggle_portfolio("all-projects");
     set_team_height();
     display_team_member('frank-underwood');
 
+    mainSliderCounter = 0;
+    $('.main-slider .control').on('click', function () {
+       toggle_main_slider($(this).attr('id'));
+    });
 
     $('.play-btn button').on('click', function(){
         document.getElementById('video').play();
         $('.video-container .overlay').fadeOut('slow');
     });
+
+    setInterval(function () {
+        toggle_main_slider("main-slider-right");
+    }, 4000);
 
     $('.video-container .overlay').on('click', function(){
         document.getElementById('video').play();
@@ -151,13 +185,13 @@ $(document).ready(function(){
         $('.video-container .overlay').fadeIn('slow');
     });
 
-    $('#map-trigger').on('click', function () {
-        if($(this).attr('src') == 'images/arrow-down.png'){
-            $(this).attr('src', 'images/arrow-up.png');
+    $('#map-section').on('click', function () {
+        if($('#map-trigger').attr('src') == 'images/arrow-down.png'){
+            $('#map-trigger').attr('src', 'images/arrow-up.png');
             $('#map-container').slideDown(1000);
         }
         else {
-            $(this).attr('src', 'images/arrow-down.png');
+            $('#map-trigger').attr('src', 'images/arrow-down.png');
             $('#map-container').slideUp(1000);
         }
     });
