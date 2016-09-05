@@ -150,4 +150,15 @@ $(document).ready(function(){
         document.getElementById('video').pause();
         $('.video-container .overlay').fadeIn('slow');
     });
+
+    $('#map-trigger').on('click', function () {
+        if($(this).attr('src') == 'images/arrow-down.png'){
+            $(this).attr('src', 'images/arrow-up.png');
+            $('#map-container').slideDown(1000);
+        }
+        else {
+            $(this).attr('src', 'images/arrow-down.png');
+            $('#map-container').slideUp(1000);
+        }
+    });
 });

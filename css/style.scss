@@ -709,3 +709,41 @@ section.callback {
     }
   }
 }
+
+section.map {
+  background: #ebebeb;
+
+  .header {
+    background: #0c1215;
+    text-align: center;
+    padding: 25px 0 27px;
+
+    h2 {
+      font-family: "Roboto Bold";
+      font-size: 18pt;
+      color: #fff;
+      text-transform: uppercase;
+      display: inline;
+      margin: 0;
+      vertical-align: middle;
+    }
+
+    #map-trigger {
+      vertical-align: middle;
+      margin: 0 7px;
+      cursor: pointer;
+    }
+  }
+
+  .map-container {
+    text-align: center;
+    display: none;
+
+    iframe {
+      width: 80%;
+      min-height: 400px;
+      margin: 30px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  }
+}
