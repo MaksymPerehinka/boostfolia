@@ -147,7 +147,7 @@ nav#right-navigation {
         transition: 0.25s ease all;
 
         &:hover {
-          background: #3d3d3d;
+          background: #e84c3d;
         }
       }
     }
@@ -271,6 +271,7 @@ section.video {
 
       video {
         width: 100%;
+        display: block;
         position: relative;
         z-index: 1;
         cursor: pointer;
@@ -365,6 +366,61 @@ section.portfolio {
         p.description {
           color: #fff;
           text-align: center;
+        }
+      }
+    }
+  }
+}
+
+section.clients-slider {
+  background: #1c1c1c;
+  padding: 65px 0;
+
+  .slider {
+    width: 910px;
+    margin: 0 auto;
+    position: relative;
+
+    .arrow{
+      position: absolute;
+      top: calc(50% - 14px);
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    .arrow-left {
+      left: 0;
+    }
+    .arrow-right {
+      right: 0;
+    }
+
+    .content {
+      width: 670px;
+      margin: 0 auto;
+      overflow: hidden;
+
+      .slide {
+        float: left;
+        width: calc(100% / 3);
+        text-align: center;
+        padding-top: 20px;
+
+        a:hover {
+          text-decoration: none;
+          opacity: 0.7;
+        }
+
+        span.name {
+          margin-left: 9px;
+          font-family: Arial;
+          font-size: 12pt;
+          color: #fff;
+          padding-bottom: 10px;
+          position: relative;
+          top: -10px;
         }
       }
     }

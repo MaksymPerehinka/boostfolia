@@ -166,4 +166,21 @@ $(document).ready(function(){
         if($('#right-navigation').css('right') == '0px') $('#right-navigation').animate({right: '-150px'});
         else $('#right-navigation').animate({right: '0px'});
     });
+
+    var clientSliderWidth = $('.clients-slider .slide').width();
+
+    $('.clients-slider .arrow').bind('click', function () {
+        var firstSlide = $('.clients-slider .slide:first');
+        var lastSlide = $('.clients-slider .slide:last');
+        if($(this).attr('id') == '#slide-client-left') {
+            var temp = firstSlide;
+            firstSlide.remove();
+            $(temp).insertAfter(lastSlide);
+        }
+        else if($(this).attr('id') == '#slide-client-right') {
+            var temp = lastSlide;
+            lastSlide.remove();
+            $(temp).insertBefore(firstSlide);
+        }
+    });
 });
