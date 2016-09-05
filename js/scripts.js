@@ -171,10 +171,6 @@ $(document).ready(function(){
         $('.video-container .overlay').fadeOut('slow');
     });
 
-    setInterval(function () {
-        toggle_main_slider("main-slider-right");
-    }, 4000);
-
     $('.video-container .overlay').on('click', function(){
         document.getElementById('video').play();
         $('.video-container .overlay').fadeOut('slow');
