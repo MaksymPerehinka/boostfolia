@@ -60,8 +60,55 @@ header.container-fluid {
   background: #f8f6f6;
   border-bottom: 4px solid #ebebeb;
   padding: 50px 0 49px; }
+  header.container-fluid h1.main-header {
+    font-family: BigNoodleTitling;
+    font-size: 30pt;
+    display: inline;
+    color: #696969;
+    vertical-align: middle;
+    margin: 0 0 0 25px; }
+  header.container-fluid img.logo {
+    vertical-align: middle; }
   header.container-fluid .dropdown {
     margin-top: 14px; }
+
+nav#right-navigation {
+  position: absolute;
+  top: 176px;
+  right: -150px;
+  z-index: 5; }
+  nav#right-navigation h2.header {
+    margin: 0;
+    background: #3d3d3d;
+    color: #fff;
+    font-family: "Roboto Condencedd";
+    font-size: 14pt;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 20px; }
+  nav#right-navigation ul {
+    padding: 0;
+    margin: 0;
+    background: #696969; }
+    nav#right-navigation ul li {
+      list-style: none; }
+      nav#right-navigation ul li a {
+        display: block;
+        text-align: center;
+        padding: 10px 20px;
+        color: #fff;
+        font-family: "Roboto Light";
+        font-size: 12pt;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: 0.25s ease all; }
+        nav#right-navigation ul li a:hover {
+          background: #3d3d3d; }
+    nav#right-navigation ul li.divider {
+      height: 1px;
+      width: calc(100% - 40px);
+      margin: 0 auto;
+      background: #797979; }
 
 section.about-us .advantage {
   background: #ebebeb;

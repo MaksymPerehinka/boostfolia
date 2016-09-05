@@ -161,4 +161,9 @@ $(document).ready(function(){
             $('#map-container').slideUp(1000);
         }
     });
+
+    $('#menu-button').on('click', function () {
+        if($('#right-navigation').css('right') == '0px') $('#right-navigation').animate({right: '-150px'});
+        else $('#right-navigation').animate({right: '0px'});
+    });
 });

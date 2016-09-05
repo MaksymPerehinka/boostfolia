@@ -92,8 +92,72 @@ header.container-fluid {
   border-bottom: 4px solid $gray;
   padding: 50px 0 49px;
 
+  h1.main-header {
+    font-family: BigNoodleTitling;
+    font-size: 30pt;
+    display: inline;
+    color: #696969;
+    vertical-align: middle;
+    margin: 0 0 0 25px;
+  }
+
+  img.logo {
+    vertical-align: middle;
+  }
+
   .dropdown {
     margin-top: 14px;
+  }
+}
+
+nav#right-navigation {
+  position: absolute;
+  top: 176px;
+  right: -150px;
+  z-index: 5;
+
+  h2.header {
+    margin: 0;
+    background: #3d3d3d;
+    color: #fff;
+    font-family: "Roboto Condencedd";
+    font-size: 14pt;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 20px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    background: #696969;
+
+    li {
+      list-style: none;
+
+      a {
+        display: block;
+        text-align: center;
+        padding: 10px 20px;
+        color: #fff;
+        font-family: "Roboto Light";
+        font-size: 12pt;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: 0.25s ease all;
+
+        &:hover {
+          background: #3d3d3d;
+        }
+      }
+    }
+
+    li.divider {
+      height: 1px;
+      width: calc(100% - 40px);
+      margin: 0 auto;
+      background: #797979;
+    }
   }
 }
 
