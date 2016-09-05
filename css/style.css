@@ -660,12 +660,81 @@ footer {
 
 @media screen and (max-width: 1200px) {
   header.container-fluid {
-    padding: 45px 0 44px; } }
+    padding: 45px 0 44px; }
+
+  section.main-slider {
+    padding: 120px 0 32px; }
+    section.main-slider .top-slider .slide .top {
+      font-size: 45pt; }
+    section.main-slider .top-slider .slide .bottom {
+      font-size: 18pt; }
+    section.main-slider .scroll-icon img {
+      display: block;
+      margin: 54px auto 17px; } }
 @media screen and (max-width: 992px) {
   header.container-fluid {
-    padding: 35px 0 34px; } }
+    padding: 35px 0 34px; }
+
+  section.main-slider {
+    padding: 90px 0 32px; }
+    section.main-slider .top-slider .slide .top {
+      font-size: 25pt; }
+    section.main-slider .top-slider .slide .bottom {
+      font-size: 14pt; }
+    section.main-slider .scroll-icon img {
+      display: block;
+      margin: 34px auto 17px; }
+
+  section.about-us {
+    width: calc(100% - 20px); }
+    section.about-us p.section-text {
+      margin: 0 30px 58px; }
+    section.about-us .advantage .header {
+      margin: 19px 0 5px 0;
+      font-size: 13pt; }
+    section.about-us .advantage .description {
+      font-size: 10pt; } }
 @media screen and (max-width: 768px) {
   header.container-fluid {
-    padding: 25px 0 24px; } }
+    padding: 25px 0 24px; }
+    header.container-fluid h1.main-header {
+      font-size: 20pt;
+      margin: 0 0 0 5px; }
+    header.container-fluid .dropdown img {
+      width: 24px; }
+
+  section.main-slider {
+    padding: 20px 0; }
+    section.main-slider .controls .left {
+      left: 15px; }
+    section.main-slider .controls .right {
+      right: 15px; }
+    section.main-slider .controls .control {
+      width: 15px;
+      height: auto; }
+    section.main-slider .top-slider {
+      padding: 0 20px; }
+      section.main-slider .top-slider .slide .top {
+        font-size: 13pt; }
+      section.main-slider .top-slider .slide .bottom {
+        font-size: 9pt; }
+    section.main-slider .scroll-icon img {
+      display: block;
+      margin: 17px auto 10px;
+      width: 10px;
+      height: auto; }
+    section.main-slider .scroll-icon .scroll-text {
+      font-size: 7pt; }
+
+  section.about-us {
+    padding: 20px 0; }
+    section.about-us .section-header h2 {
+      font-size: 30pt; }
+    section.about-us .section-header .underline {
+      width: 92px; }
+    section.about-us p.section-text {
+      margin: 0 30px 28px; }
+    section.about-us .advantage {
+      margin-bottom: 15px; } }
 
 /*# sourceMappingURL=style.css.map */
