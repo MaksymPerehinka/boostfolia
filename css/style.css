@@ -17,7 +17,8 @@ body {
   background: #fff;
   position: relative;
   width: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  min-width: 320px; }
 
 section.text-section {
   padding: 64px 0 94px; }
@@ -656,5 +657,15 @@ footer {
     text-align: center; }
     footer .social-buttons img {
       margin: 0 4px; }
+
+@media screen and (max-width: 1200px) {
+  header.container-fluid {
+    padding: 45px 0 44px; } }
+@media screen and (max-width: 992px) {
+  header.container-fluid {
+    padding: 35px 0 34px; } }
+@media screen and (max-width: 768px) {
+  header.container-fluid {
+    padding: 25px 0 24px; } }
 
 /*# sourceMappingURL=style.css.map */

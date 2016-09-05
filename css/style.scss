@@ -2,6 +2,10 @@ $white: #f8f6f6;
 $gray: #ebebeb;
 $darkgrey: #707070;
 
+$xs: 768px;
+$sm: 992px;
+$md: 1200px;
+
 @font-face {
   font-family: Roboto;
   src: url(fonts/Roboto-Thin.ttf)
@@ -32,6 +36,7 @@ body {
   position: relative;
   width: 100%;
   overflow-x: hidden;
+  min-width: 320px;
 }
 
 section.text-section {
@@ -980,5 +985,21 @@ footer {
     img {
       margin: 0 4px;
     }
+  }
+}
+
+@media screen and (max-width: $md){
+  header.container-fluid{
+    padding: 45px 0 44px;
+  }
+}
+@media screen and (max-width: $sm){
+  header.container-fluid{
+    padding: 35px 0 34px;
+  }
+}
+@media screen and (max-width: $xs){
+  header.container-fluid{
+    padding: 25px 0 24px;
   }
 }
