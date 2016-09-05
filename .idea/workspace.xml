@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41d76efd-fcfe-464d-abfb-f51fe03e3ea0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css.map" afterPath="$PROJECT_DIR$/css/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.scss" afterPath="$PROJECT_DIR$/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/scripts.js" afterPath="$PROJECT_DIR$/js/scripts.js" />
     </list>
     <ignored path="boostfolia.iws" />
@@ -114,15 +109,15 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="210" column="32" selection-start-line="210" selection-start-column="32" selection-end-line="210" selection-end-column="32" />
+            <state relative-caret-position="482">
+              <caret line="216" column="81" selection-start-line="216" selection-start-column="81" selection-end-line="216" selection-end-column="81" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
                 <element signature="n#!!block;n#toggle_portfolio#0" expanded="false" />
                 <element signature="n#!!block;n#set_team_height#0" expanded="false" />
                 <element signature="n#!!block;n#set_percentage#0;n#!!block;n#display_team_member#0" expanded="false" />
                 <element signature="e#5192#5504#0" expanded="false" />
-                <marker date="1473053796712" expanded="false" signature="2426:4516" ph="{...}" />
+                <marker date="1473056560803" expanded="false" signature="2426:4516" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -325,12 +320,12 @@
       <updated>1472904641166</updated>
       <workItem from="1472904642759" duration="15878000" />
       <workItem from="1472931988117" duration="33921000" />
-      <workItem from="1473022007264" duration="30888000" />
+      <workItem from="1473022007264" duration="33647000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80687000" />
+    <option name="totallyTimeSpent" value="83446000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -461,7 +456,7 @@
             <element signature="n#!!block;n#set_team_height#0" expanded="false" />
             <element signature="n#!!block;n#set_percentage#0;n#!!block;n#display_team_member#0" expanded="false" />
             <element signature="e#5192#5504#0" expanded="false" />
-            <marker date="1473053796712" expanded="false" signature="2426:4516" ph="{...}" />
+            <marker date="1473056560803" expanded="false" signature="2426:4516" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -590,15 +585,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="210" column="32" selection-start-line="210" selection-start-column="32" selection-end-line="210" selection-end-column="32" />
+        <state relative-caret-position="482">
+          <caret line="216" column="81" selection-start-line="216" selection-start-column="81" selection-end-line="216" selection-end-column="81" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
             <element signature="n#!!block;n#toggle_portfolio#0" expanded="false" />
             <element signature="n#!!block;n#set_team_height#0" expanded="false" />
             <element signature="n#!!block;n#set_percentage#0;n#!!block;n#display_team_member#0" expanded="false" />
             <element signature="e#5192#5504#0" expanded="false" />
-            <marker date="1473053796712" expanded="false" signature="2426:4516" ph="{...}" />
+            <marker date="1473056560803" expanded="false" signature="2426:4516" ph="{...}" />
           </folding>
         </state>
       </provider>
