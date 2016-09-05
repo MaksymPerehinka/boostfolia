@@ -167,20 +167,56 @@ $(document).ready(function(){
         else $('#right-navigation').animate({right: '0px'});
     });
 
-    var clientSliderWidth = $('.clients-slider .slide').width();
+    var slides = $('.clients-slider .slide');
+    var clientSlideWidth = slides.width();
+    var clientSlidePositions = [0,1,2];
 
     $('.clients-slider .arrow').bind('click', function () {
-        var firstSlide = $('.clients-slider .slide:first');
-        var lastSlide = $('.clients-slider .slide:last');
+        var i, css;
+
         if($(this).attr('id') == '#slide-client-left') {
-            var temp = firstSlide;
-            firstSlide.remove();
-            $(temp).insertAfter(lastSlide);
+            console.log(clientSlidePositions);
+            for(i = 0; i < 3; i++){
+               if(clientSlidePositions[i] <= 0) clientSlidePositions[i] = 2;
+                else clientSlidePositions[i]--;
+            }
+            console.log(clientSlidePositions);
+            for(i = 0; i < 3; i++){
+                if(clientSlidePositions[i] == 2) {
+                    css = "-" + clientSlideWidth/2 + "px";
+                    $('.clients-slider .slide:eq(' + i + ')').animate({left: css, opacity: 0}, 500, function () {
+                        css = (2 * clientSlideWidth + clientSlideWidth/2) + "px";
+                        $(this).css('left', css);
+                        css = 2 * clientSlideWidth + "px";
+                        $(this).animate({left: css, opacity: 1}, 500);
+                    });
+                }
+                else {
+                    css = clientSlidePositions[i] * clientSlideWidth + "px";
+                    $('.clients-slider .slide:eq(' + i + ')').animate({left: css}, 1000);
+                }
+            }
         }
         else if($(this).attr('id') == '#slide-client-right') {
-            var temp = lastSlide;
-            lastSlide.remove();
-            $(temp).insertBefore(firstSlide);
+            for(i = 0; i < 3; i++){
+                if(clientSlidePositions[i] >= 2) clientSlidePositions[i] = 0;
+                else clientSlidePositions[i]++;
+            }
+            for(i = 0; i < 3; i++){
+                if(clientSlidePositions[i] == 0) {
+                    css = (2 * clientSlideWidth + clientSlideWidth/2) + "px";
+                    $('.clients-slider .slide:eq(' + i + ')').animate({left: css, opacity: 0}, 500, function () {
+                        css = "-" + clientSlideWidth/2 + "px";
+                        $(this).css('left', css);
+                        css = "0";
+                        $(this).animate({left: css, opacity: 1}, 500);
+                    });
+                }
+                else {
+                    css = clientSlidePositions[i] * clientSlideWidth + "px";
+                    $('.clients-slider .slide:eq(' + i + ')').animate({left: css}, 1000);
+                }
+            }
         }
     });
 });
